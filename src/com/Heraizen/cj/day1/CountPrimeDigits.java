@@ -11,20 +11,31 @@ import java.util.Scanner;
 public class CountPrimeDigits {
 
 	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter any Number");
-		int num=sc.nextInt();
-		int count=0;
-		while(num!=0) {
-			int mod=num%10;
-			if(mod%2==0) {
-				count++;
-				}
-			num=num/10;
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter any number:");
+		int n= s.nextInt();
+		int m,k=0;
+		while(n>0)
+		{
+			m=n%10;
+			n=n/10;
+			int count =0;
+	        for(int i=2;i<=m/2;i++)
+	        {
+	        	if(m%i==0)
+	        	{
+	        		count++;
+	        	}
+	        }
+	        if(count==0&&!(m<=1))
+	        {
+	        	k++;
+	        }
+			
+			
 		}
-		System.out.println(count);
-
-		sc.close();
+		System.out.println(k);
+		s.close();
 	}
 
 }

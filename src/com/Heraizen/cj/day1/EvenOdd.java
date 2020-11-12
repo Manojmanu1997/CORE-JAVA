@@ -11,6 +11,7 @@ public class EvenOdd {
 	}
 	else
 		System.out.println("The Entered number " +n+ " is odd");
+	sc.close();
 	}
 
 }

@@ -14,6 +14,7 @@ public class BillingDiscount {
 		net_amount=billing_amount;
 	}
 	System.out.println("your Net billing amount: " +net_amount);
+	sc.close();
 	}
 
 }

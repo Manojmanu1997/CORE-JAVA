@@ -12,13 +12,14 @@ public class SwapOfTwoNumbers {
 		        
 		        System.out.println("Enter the Second number num2: ");
 		        num2=sc.nextFloat();
+		        
 		        System.out.println("Before swap, the values of num1 = "+num1+" and num2 = "+num2);
 
 		        num1 = num1 - num2;
 		        num2 = num1 + num2;
 		        num1 = num2 - num1;
 		        System.out.println("After swap, the values of num1 = "+num1+" and num2 = "+num2);
-		 
+		 sc.close();
 
 	}
 
